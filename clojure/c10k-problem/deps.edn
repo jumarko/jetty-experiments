@@ -1,0 +1,38 @@
+{:paths ["src" "resources"]
+
+ :deps {org.clojure/clojure            {:mvn/version "1.11.1"}
+        metosin/jsonista               {:mvn/version "0.3.7"}
+        metosin/malli                  {:mvn/version "0.11.0"}
+        metosin/reitit                 {:mvn/version "0.7.0-alpha5"}
+        metosin/reitit-dev             {:mvn/version "0.7.0-alpha5"}
+        metosin/ring-swagger-ui        {:mvn/version "4.18.1"}
+        ring-cors/ring-cors            {:mvn/version "0.1.13"}
+        ring/ring-core                 {:mvn/version "1.10.0"}
+
+        ;; https://github.com/sunng87/ring-jetty9-adapter/blob/master/project.clj
+        info.sunng/ring-jetty9-adapter {:mvn/version "0.22.1"}
+        ;; doesn't work with Jetty 12 :(
+        ;; org.eclipse.jetty/jetty-server {:mvn/version "12.0.0.beta4"}
+
+        org.clojure/tools.cli          {:mvn/version "1.0.219"}
+        org.clojure/tools.logging      {:mvn/version "1.2.4"}
+        org.reflections/reflections    {:mvn/version "0.10.2"}
+        ;; org.slf4j/slf4j-api            {:mvn/version "1.7.36"}
+        ;; log4j for logging: https://howtodoinjava.com/log4j2/log4j2-with-slf4j/
+        org.apache.logging.log4j/log4j-api {:mvn/version "2.20.0"}
+        org.apache.logging.log4j/log4j-core {:mvn/version "2.20.0"}
+        ;; this includes slf4j-api
+        org.apache.logging.log4j/log4j-slf4j-impl {:mvn/version "2.20.0"} 
+
+        ;; https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-slf4j-impl
+        org.eclipse.jetty/jetty-slf4j-impl {:mvn/version "11.0.15"}
+
+
+        }
+
+ :aliases
+ {:dev
+  {:jvm-opts ["--enable-preview"]}
+  }
+
+ }

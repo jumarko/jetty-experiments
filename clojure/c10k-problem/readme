@@ -1,0 +1,15 @@
+My own testing was done with 
+    openjdk version "21-ea" 2023-09-19
+    OpenJDK Runtime Environment Zulu21+79-CA (build 21-ea+33)
+--------------------
+
+To start clojure app 
+./run-app.sh 
+
+The API is 
+http://localhost:3000/api
+
+To run benchmarks, (you'll need wrk)
+./run-benchmark.sh 
+
+During the C10k benchmark, you should see a lot of socket read errors. 
