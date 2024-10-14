@@ -12,7 +12,7 @@
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
 <!--        https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server-->
-        <jetty.version>11.0.15</jetty.version>
+        <jetty.version>11.0.24</jetty.version>
 <!--        Try and compare with Jetty 12-->
 <!--        <jetty.version>12.0.0</jetty.version>-->
     </properties>
